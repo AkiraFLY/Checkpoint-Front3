@@ -1,0 +1,57 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+}
+
+.divContainer{
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 150px;
+  background-color: rgb(65, 65, 65);
+}
+
+.formContainer{
+  display: flex;
+  gap: 2rem;
+  padding: 10px;
+}
+
+.inputContainer{
+  width: 250px;
+  padding: .6rem;
+  border-radius: 0.4rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+.inputContainer:focus {
+  /* Adicionar destaque quando o campo de entrada está em foco */
+  border-color: #3498db;
+}
+
+.buttonStyle{
+  padding: 10px;
+  background-color: rgb(126, 224, 113);
+  border-style: none;
+  border-radius: 1rem;
+  width: 150px;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.buttonStyle:hover {
+  background-color: rgb(106, 204, 93);
+  transform: scale(1.05); 
+}
+
+.errorMsg {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
